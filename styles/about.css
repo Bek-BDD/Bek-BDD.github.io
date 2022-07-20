@@ -97,8 +97,8 @@ body{
     background-color:rgb(255, 145, 0) ;
     color:white;
     padding: 10px;
-    border: none;
-    
+    cursor: pointer;
+    border: none;    
     z-index: 10;
 }
 .submit button:hover{
