@@ -101,6 +101,9 @@ footer .right{
     position: absolute;
     right: 0;
 }
+.images{
+    width: 150px;
+}
 .right img{
     width: 150px;
     margin:10px;

@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    position:relative; 
+    min-width: 100%;
+    min-height: 100%;
+  }
+body{
+    background-color: rgb(22, 22, 22);
+    color: #888;
+    font-family:'Poppins', sans-serif;
+   
+}
+.empty{
+    height:250px
+}
+.container{
+    display: grid;
+    width: 90%;
+    height: 400px;
+    margin: 10px auto;
+    grid-template-columns: 1fr  1fr 1fr;
+    gap:5px;
+}
+.container h3{
+    color: white;
+    margin:20px 20px 8px 20px;
+    padding:12px
+}
+.container p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.content{
+    margin: 0 20px;
+    padding: 0 12px
+}
+
+.infos{
+    align-items: center;
+    margin: 20px 0;
+}
+.infos .text{
+    font-family: 'poppins';
+    color: white;
+}
+
+.infos::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.info{
+    display: flex;    
+}
+.icon{    
+    padding: 12px 12px 12px 0px;
+    color:rgb(255, 145, 0);
+    
+}
+.text{    
+    padding: 12px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.input-field{
+    display: flex;
+    position: absolute;
+    float: left;
+    
+    border-radius: 50px;
+    width: 250px;
+    background-color: rgb(41, 40, 40);
+    
+}
+.input-field input{  
+    width: 200px;  
+    background-color: rgb(41, 40, 40);
+    border-radius: 50px;
+    border: none;
+    color:white;
+    font-family: 'poppins' ;
+    font-size: 14px;
+    padding:5px 0px 5px 25px;
+
+}
+.input-field input:focus{
+   
+    border: none;
+    outline: none;
+}
+
+.submit button{
+    border-radius: 50px;
+    width: 70px;
+    background-color:rgb(255, 145, 0) ;
+    color:white;
+    padding: 10px;
+    border: none;
+    
+    z-index: 10;
+}
+.fa-twitter{
+    
+    color:white;
+}
+.insta{
+    display: flex;
+    float: left;
+    justify-content: flex-start;
+}
+.insta img{
+    margin: 5px;
+    width:100px;
+    height: 100px;
+    object-fit: contain;
+    background-color: white;
+}
+footer{   
+    min-width: 100%;    
+    position: absolute;
+    bottom: 0;
+    left: 30;
+    padding: 20px 0px;
+    
+}
+.foot{
+    border-top: 1px solid #888;
+    width: 90%;
+    margin:0 auto;
+    position: relative;
+   
+
+}
+footer ul{
+    display: flex;
+    float: left;
+    padding: 20px 20px 20px 0px;
+}
+footer ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-right:12px ;
+   
+}
+footer ul li a{
+    text-decoration: none;
+    color:white;
+}
+footer ul li a:hover{
+    color:rgb(255, 145, 0);
+}
+footer .logo{
+    right:0;
+    position: absolute;
+    color: white;
+    font-size: 28px;
+}
+
