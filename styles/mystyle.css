@@ -89,6 +89,7 @@ ul a span{
 footer{
     margin:20px 20px 0px 20px;
     display: flex;
+    position: relative;
 }
 
 footer .left{   
