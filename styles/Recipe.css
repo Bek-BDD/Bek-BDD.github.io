@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    min-width: 100%;
+    position: relative;
+}
+body{
+    font-family: 'Roboto', sans-serif ;
+
+}
+header{
+    width: 100%;
+    display: grid;
+   color:#E4EEFF;
+   font-size: 15px;
+    background-color: #3F6Fb6;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color:#E4EEFF;
+}
+nav{
+    display: flex;
+    float: left;
+}
+nav .left img{
+    float: left;
+    background-color: #2D405E;
+    height: 78px;
+    width:200px;
+}
+nav .left .icon{
+    float: left;
+    padding: 30px;
+    
+}
+nav .left .icon::before{
+    content: "";
+    position: absolute;
+    height: 60%;
+    top:15px;
+    border: 0.5px solid #cccccc;
+    opacity: .3;
+    
+}
+nav .right{
+    position: absolute;
+    right: 0;
+    
+    padding: 30px;
+}
+nav .right i{
+    font-size: 24px;
+    
+}
+nav .left .icon i{
+    margin: 0 10px;
+}
+nav .right{
+    float: left;
+}
+
+nav ul{
+    float: left;
+    padding :0;
+   
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding:30px 10px;
+}
+nav ul li a:hover{
+    color: white;
+    border-bottom: 1px solid white;
+    transition: ease 1s;
+}
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: 4fr 1fr 2fr;
+}
+.banner .card h3{
+    font-family: 'Raleway', sans-serif;
+    margin:20px 10px 0px ;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 100;
+   
+    color:#324869;
+    position: relative;
+    
+}
+.banner .card h3::after{
+    content: "";
+    
+    width: 100%;
+    height: 2px;
+    z-index: 1;
+    margin: 20px 0px auto;
+    display: block;
+        
+    background-color:rgb(241, 237, 237)
+}
+.banner .card p{
+    font-family: 'Raleway', 'Roboto';
+    margin-top: 15px;
+    margin-bottom:50px  ;  
+    font-size: 16px;
+    color:rgb(39, 39, 39);
+    text-justify:distribute;
+    
+}
+.button{
+    margin:50px 0px ;
+}
+ .card .card-content a{
+    font-family: 'Roboto', sans-serif;
+     font-weight: 400; 
+    color:#9b9b9b;;
+    text-decoration: none;
+    padding: 8px;
+    
+}
+.card .card-content a:hover{
+    color: #3F6Fb6;
+    font-size: 17px;
+    
+}
+.card-content a i{
+    margin:5px;
+}
+.card-content .movie{
+width:100%;
+height: 200px;
+margin: 10px;
+z-index: 1;
+}
+.card-content .movie img{
+    width:100%;
+    height: 100%;
+    opacity: .2;
+}
+.card ul li{
+list-style-type: none;
+}
+.card ul li .details{
+    border: 1px solid rgb(211, 210, 210);
+    padding:20px;
+}
+.card ul li .details:hover  {
+     background-color: #2D405E;
+   
+}
+.card ul li .details:hover .top p, .card ul li .details:hover > h3  {
+    
+    color:white;
+}
+.card ul li .details .top{
+    display: flex;    
+    position: relative;
+   
+}
+.card ul li .details .top p{
+ margin: 15px;
+   
+ }
+ .card ul li .details h3::after{
+    display: none;
+ }
+.card ul li .details .top .right{
+    float:left;
+    position: absolute;
+    right: 0;
+}
+.card ul .first, .card ul .first p, .card ul .first a, .card ul .first h3 {
+    background-color: #2D405E;
+    color:white;
+}
+
+
+
+.card ul .details .top::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin:20px;
+    gap: 30px;
+}
+main .card {   
+    text-align: center;
+    background-color: #323233;
+    position: relative;
+    height: 500px;
+}
+main .card p{
+    width: 100%;
+    padding:5px;
+    position: absolute;
+    top:61%;
+    font-family: 'Roboto';
+    font-size: 15px;
+    background-color: #323233;
+    opacity: .9;
+    text-align: center;
+    color: white;
+}
+main .card h3{
+    padding: 10px;
+    color :rgb(194, 194, 194);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    margin-bottom:25px;
+}
+main .card a {
+    padding: 10px 15px;
+    color :rgb(172, 172, 172);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    border: 1px solid #9b9b9b;
+    margin-top:15px;
+}
+.block  {
+    margin:25px 15px;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid rgb(221, 217, 217);
+}
+.more{
+   
+    align-items: center;
+    margin: 20px auto;
+    width:300px;
+}
+.block  a{
+    border: 1px solid #3F6Fb6;
+    color:#3F6Fb6;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    padding: 12px;
+  
+}
+.bottom .title{
+    width: 650px;
+    margin:50px  auto;
+    align-items: center;
+}
+.bottom .title h1{
+    font-family: 'poppins';
+    font-weight: 700;
+    font-size: 54px;
+    color:#324869;
+}
+.bottom .title h3{
+    font-family: 'Raleway';
+    font-weight: 200;
+    font-size: 25px;
+    
+}
+.bottom .title h1, .bottom .title h3{
+    text-align: center;
+    padding: 8px;
+   
+}
+.about {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+}
+.about .left {
+    margin:20px 50px;
+}
+.about .left h3{
+    font-family: 'Raleway';
+    font-weight: 200;
+    font-size: 25px;
+    margin-top: 100px ;
+}
+.about .left p{
+    margin: 20px 450px 20px 0px;
+    width: 70%;
+    font-family: 'Raleway';
+    font-weight: 100;
+    font-size: 17px;
+}
+.about .left h4{
+   color:rgb(1, 5, 22);
+   font-family: 'poppins', sans-serif;
+   font-weight: 200;
+}
+footer{
+    width: 	100%;
+    height: 250px;
+}
+.foot {
+   width:100%;
+    height:100%;
+    background-color: 	#1d1d1d;
+    text-align: center;
+}
+.foot h3{
+    padding: 100px;
+    color:rgb(99, 99, 99);
+    font-family: 'Raleway';
+    font-weight: 100;
+    font-size: 47px;
+}
